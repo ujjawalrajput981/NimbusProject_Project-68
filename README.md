@@ -4,6 +4,7 @@ C program that calculates EMI, checks loan eligibility, and generates a full amo
 
 ---
 
+
 ## Features
 - Loan eligibility check (loan ≤ 10 × monthly income)
 - EMI calculation using standard formula
