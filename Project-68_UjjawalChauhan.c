@@ -1,3 +1,16 @@
+/*
+  loan_emi_eligibility.c
+  Project: Loan Interest / EMI Calculator & Eligibility Checker
+  Authors: (Ashish Kumar Rawat , Ujjaul , Sachin , Atharva)
+  Description:
+    - Calculate EMI for a loan given principal, annual interest rate and tenure (months/years)
+    - Show Total Payment and Total Interest
+    - Check eligibility using a simple rule:
+       new EMI + existing EMIs <= allowed_ratio * monthly_income
+      (allowed_ratio commonly 0.40 means EMI shouldn't exceed 40% of monthly income)
+    - Menu-driven, simple and exam-friendly
+*/
+
 // list of header file
 #include <stdio.h>
 #include <string.h>
