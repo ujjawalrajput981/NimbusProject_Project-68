@@ -1,38 +1,48 @@
-<<<<<<< HEAD
-# Nimbus_project_UjjawalChauhan_Project-68
-Project 68: Loan Eligibility and EMI Calculator 
-=======
-# Loan Eligibility & EMI Calculator (Project - 68)
+Loan EMI Calculator & Eligibility Checker
 
-C program that calculates EMI, checks loan eligibility, and generates a full amortization schedule using structures, functions and arrays.
+| Member                 | Roll No (Optional) | Contribution                                                           |
+| ---------------------- | ------------------ | ---------------------------------------------------------------------- |
+| **Ashish Kumar Rawat** | —                  | EMI calculation logic (`emi.c`, `emi.h`)                               |
+| **Sachin Vishvakarma** | —                  | Eligibility logic & 10× income rule (`eligibility.c`, `eligibility.h`) |
+| **Atharva**            | —                  | Amortization schedule module (`amortization.c`, `amortization.h`)      |
+| **Ujjawal Chauhan**    | —                  | Main menu, user input handling, integration (`main.c`)                 |
 
----
+Project Overview
+This project is a modular C application which calculates:
+Monthly EMI (Equated Monthly Installment)
+Total Interest payable
+Total Payment
+Detailed Amortization Schedule
+Loan Eligibility using rule:
+----
+monthly_income >= 10 × (existing_emis + new_emi)
+----
+The project is divided into four modules to enable professional and independent team contribution using GitHub.
 
+loan-emi-project/
+│
+├── main.c
+├── emi.c
+├── emi.h
+├── amortization.c
+├── amortization.h
+├── eligibility.c
+├── eligibility.h
+└── README.md
 
-## Features
-- Loan eligibility check (loan ≤ 10 × monthly income)
-- EMI calculation using standard formula
-- Amortization schedule generation (month-wise breakup)
-- Modular design with separate functions and structures
-  
----
+How to Compile & Run
 
-EMI Calculation
-emi = (P x R x (1 + R)^n)/(1 - R)^n - 1
+Compile all modules
+gcc main.c emi.c amortization.c eligibility.c -o loan_emi_app -lm
 
----
+Run the program
+./loan_emi_app
+Learning Outcomes
 
-## Files
-- **Project-68_UjjawalChauhan.c** - C program.
-- **Project-68_SachinVishvakarma.c** - C program.
-- **Project-68_AshishRawat.c** - C program.
-- **Project 68.docx** – Problem statement and academic requirements.
-  
----
+Modular programming in C
 
-## Compile & Run
-```bash
-
-gcc Project_UjjawalChauhan.c -lm -o Project_UjjawalChauhan && ./Project_UjjawalChauhan
-
->>>>>>> 82484fc549359360c3ec07a06efcd86f577951df
+Splitting large projects into reusable components
+Working with multiple .c & .h files
+Using Git & GitHub for team collaboration
+Understanding EMI algorithms & amortization
+Applying real-world financial rules
