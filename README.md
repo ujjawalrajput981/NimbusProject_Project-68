@@ -7,18 +7,24 @@ Loan EMI Calculator & Eligibility Checker
 | **Atharva**            | —                  | Amortization schedule module (`amortization.c`, `amortization.h`)      |
 | **Ujjawal Chauhan**    | —                  | Main menu, user input handling, integration (`main.c`)                 |
 
-Project Overview
-This project is a modular C application which calculates:
-Monthly EMI (Equated Monthly Installment)
-Total Interest payable
-Total Payment
-Detailed Amortization Schedule
-Loan Eligibility using rule:
-----
-monthly_income >= 10 × (existing_emis + new_emi)
-----
-The project is divided into four modules to enable professional and independent team contribution using GitHub.
+<br>
 
+## 📌 Project Overview <br>
+This project is a modular C application that performs: <br><br>
+
+✔ Monthly EMI calculation <br>
+✔ Total interest payable <br>
+✔ Total payment <br>
+✔ Full amortization schedule <br>
+✔ Loan eligibility check using: <br>
+
+`monthly_income >= 10 × (existing_emis + new_emi)` <br><br>
+
+The project is divided into four modules for clean teamwork and GitHub collaboration.<br><br>
+
+---
+
+## 📁 Project Structure <br>al rules
 loan-emi-project/
 │
 ├── main.c
@@ -30,19 +36,41 @@ loan-emi-project/
 ├── eligibility.h
 └── README.md
 
-How to Compile & Run
+<br>
 
-Compile all modules
+---
+
+## ✔ Module Descriptions <br>
+
+### **main.c** <br>
+- Menu system <br>
+- User input handling <br>
+- Integration of all modules <br><br>
+
+### **emi.c / emi.h** <br>
+- EMI calculation using standard financial formula <br>
+- EMI summary printing <br><br>
+
+### **amortization.c / amortization.h** <br>
+- Month-wise EMI breakup: <br>
+  - Opening balance <br>
+  - Interest <br>
+  - Principal <br>
+  - Closing balance <br><br>
+
+### **eligibility.c / eligibility.h** <br>
+- Implements 10× income rule for loan approval <br>
+- Provides suggestions when not eligible <br><br>
+
+---
+
+## 🚀 How to Compile & Run <br>
+
+### **Compile:** <br>
+
+```bash
 gcc main.c emi.c amortization.c eligibility.c -o loan_emi_app -lm
-
-Run the program
+<br>
+Run: <br>
 ./loan_emi_app
-Learning Outcomes
-
-Modular programming in C
-
-Splitting large projects into reusable components
-Working with multiple .c & .h files
-Using Git & GitHub for team collaboration
-Understanding EMI algorithms & amortization
-Applying real-world financial rules
+<br>
