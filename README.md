@@ -3,9 +3,9 @@ Loan EMI Calculator & Eligibility Checker
 | Member                 | Roll No (Optional) | Contribution                                                           |
 | ---------------------- | ------------------ | ---------------------------------------------------------------------- |
 | **Ashish Kumar Rawat** | —                  | EMI calculation logic (`emi.c`, `emi.h`)                               |
-| **Sachin Vishvakarma** | —                  | Eligibility logic & 10× income rule (`eligibility.c`, `eligibility.h`) |
-| **Atharva**            | —                  | Amortization schedule module (`amortization.c`, `amortization.h`)      |
-| **Ujjawal Chauhan**    | —                  | Main menu, user input handling, integration (`main.c`)                 |
+| **Sachin Vishvakarma** | 25LBCS3295         | Eligibility logic & 10× income rule (`eligibility.c`, `eligibility.h`) |
+| **Atharva**            | _                  | Amortization schedule module (`amortization.c`, `amortization.h`)      |
+| **Ujjawal Chauhan**    | 25LBCS3292         | Main menu, user input handling, integration (`main.c`)                 |
 
 <br>
 
@@ -27,14 +27,14 @@ The project is divided into four modules for clean teamwork and GitHub collabora
 ## 📁 Project Structure <br>al rules
 loan-emi-project/
 │
-├── main.c
-├── emi.c
-├── emi.h
-├── amortization.c
-├── amortization.h
-├── eligibility.c
-├── eligibility.h
-└── README.md
+├── main.c<br>
+├── emi.c<br>
+├── emi.h<br>
+├── amortization.c<br>
+├── amortization.h<br>
+├── eligibility.c<br>
+├── eligibility.h<br>
+└── README.md<br>
 
 <br>
 
@@ -70,7 +70,7 @@ loan-emi-project/
 
 ```bash
 gcc main.c emi.c amortization.c eligibility.c -o loan_emi_app -lm
-<br>
-Run: <br>
+
+Run:
 ./loan_emi_app
-<br>
+
